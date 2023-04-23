@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- displays site properly based on user's device -->
+  <link rel="icon" type="image/png" sizes="32x32" href="./assets/images/favicon-32x32.png">
+
+  <title>Frontend Mentor | Results summary component</title>
+
+  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+  <style>
+    @font-face {
+      font-family: "Hanken";
+      src: url("./assets/fonts/HankenGrotesk-VariableFont_wght.ttf");
+    }
+
+    html {
+      height: 100vh;
+      margin: 0;
+    }
+
+    body {
+      margin: 0;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+    }
+
+    .cont {
+      width: 60%;
+      height: 80%;
+      background: white;
+      display: flex;
+      border-radius: 20px;
+      box-shadow: 0px 0px 20px 1px grey;
+    }
+
+    .s1 {
+      color: white;
+      background: linear-gradient(to right bottom, hsl(252, 100%, 67%), hsl(241, 81%, 54%));
+      width: 50%;
+      height: 100%;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      flex-flow: column;
+      border-radius: 20px;
+      font-family: "Hanken";
+    }
+
+    .s1 h2 {
+      font-family: "Hanken";
+      font-weight: bold;
+    }
+
+    .s1 .circle {
+      height: 180px;
+      width: 180px;
+      border-radius: 50%;
+      display: flex;
+      flex-flow: column;
+      justify-content: center;
+      align-items: center;
+      background: linear-gradient(to right bottom,hsla(256, 72%, 46%, 1),hsla(241, 72%, 46%, 0));
+      position: relative;
+    }
+
+    .circle p {
+      position: absolute;
+      bottom: 0;
+      margin-bottom: 30px;
+    }
+
+    .circle h1 {
+      font-size: 50px;
+      font-weight: bold;
+    }
+
+    .s1 p {
+      width: 80%;
+      justify-content: center;
+      text-align: center;
+    }
+
+    .s2 {
+      width: 50%;
+      display: flex;
+      flex-flow: column;
+      justify-content: space-evenly;
+      align-items: center;
+      font-family: 'Hanken';
+    }
+
+    .sum {
+      width: 80%;
+      height: 60px;
+      border-radius: 5px;
+      background: #0000005d;
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      font-weight: bold;
+      position: relative;
+    }
+
+    .sum img {
+      margin-left: 20px;
+    }
+
+    .prc {
+      position: absolute;
+      right: 0;
+      margin-right: 20px;
+    }
+
+    button {
+      height: 50px;
+      width: 80%;
+      background: hsl(0, 4%, 11%);
+      border: none;
+      border-radius: 50px;
+      color: white;
+      font-size: 18px;
+    }
+    .attribution {
+      margin-top: 20px;
+    }
+  </style>
+</head>
+
+<body>
+  <div class="cont">
+    <div class="s1">
+      <h2>Your Result</h2>
+      <div class="circle">
+        <h1>76</h1>
+        <p>of 100</p>
+      </div>
+      <h2>Great</h2>
+      <p>You scored higher than 65% of the people who have taken these tests.</p>
+    </div>
+    <div class="s2">
+      <h2>Summary</h2>
+      <div class="sum" style="background: rgba(206, 0, 0, 0.1);color: hsla(0,
+          100%, 56%, 0.877);">
+          <img src="./assets/images/icon-reaction.svg" alt="" srcset="">
+        <p class="tit">Reaction</p>
+        <p class="prc">80 / 100</p>
+      </div>
+      <div class="sum" style="background: hsla(39, 100%, 56%, 0.2);color:
+          hsl(39, 100%, 56%);">
+        <img src="./assets/images/icon-memory.svg" alt="" srcset="">
+        <p class="tit">Memory</p>
+        <p class="prc">92 / 100</p>
+      </div>
+      <div class="sum" style="background: hsla(166, 100%, 37%, 0.2);color:
+          hsl(166, 100%, 37%);">
+        <img src="./assets/images/icon-verbal.svg" alt="" srcset="">
+        <p class="tit">Verbal</p>
+        <p class="prc">72 / 100</p>
+      </div>
+      <div class="sum" style="background: hsla(234, 85%, 45%, 0.233);color:
+          hsl(234, 85%, 45%);">
+        <img src="./assets/images/icon-visual.svg" alt="" srcset="">
+        <p class="tit">Visual</p>
+        <p class="prc">99/100</p>
+      </div>
+      <button>Continue</button>
+    </div>
+  </div>
+
+  <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+    Coded by <a href="#">Errfig Aymen</a>.
+  </div>
+</body>
+
+</html>
